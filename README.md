@@ -2,9 +2,10 @@
 
 ## Project Description
 
-Semiconductor manufacturing involves various process and sensor parameters that can affect the quality and yield of semiconductor products. This project uses machine learning classification techniques to predict whether a semiconductor sample belongs to the High Yield or Low Yield category.
-The project analyzes semiconductor manufacturing data, performs data preprocessing and feature standardization, and applies three machine learning classification algorithms: Random Forest, Support Vector Machine (SVM), and Logistic Regression.
-Among the evaluated models, Support Vector Machine achieved the highest accuracy of approximately 93.63% and was selected as the best-performing model.
+Semiconductor manufacturing is a complex process that involves various process and sensor parameters. These parameters can significantly affect the quality and yield of the final semiconductor products. Therefore, predicting semiconductor yield is important for identifying potential low-yield conditions and improving manufacturing quality.
+This project uses machine learning classification techniques to analyze semiconductor manufacturing data and predict whether a semiconductor sample belongs to the High Yield or Low Yield category.
+The project includes data preprocessing, exploratory data analysis, feature standardization, machine learning model training, model evaluation, and prediction. Three classification algorithms, namely Random Forest, Support Vector Machine (SVM), and Logistic Regression, are implemented and compared.
+Among the evaluated models, Support Vector Machine achieved the highest accuracy of approximately 93.63% and was selected as the best-performing model for prediction.
 
 ## Objectives
 
@@ -36,7 +37,7 @@ The dataset contains semiconductor manufacturing process and sensor-related feat
 - Joblib
 - Jupyter Notebook
 - VS Code
-
+- 
 ## Machine Learning Models
 
 The following classification algorithms were implemented:
@@ -94,13 +95,53 @@ The trained model is saved using Joblib and can be reused for predicting new sam
 ## Project Structure
 
 ```text
-Semiconductor-Yield-Prediction/
+Semiconductor_Yield_Prediction/
 │
-├── dataset/
-├── notebooks/
-├── model/
-├── app/
-├── requirements.txt
-├── README.md
-└── Project_Report.pdf
+├── models/
+│   ├── best_model.pkl
+│   ├── best_svm_model.pkl
+│   └── scaler.pkl
+│
+├── Semiconductor_Yield_Prediction.ipynb
+├── signal-data (1).csv
+└── requirements.txt
+````
 
+
+Then:
+
+```markdown
+### File Description
+
+- `Semiconductor_Yield_Prediction.ipynb` – Contains data analysis, preprocessing, model training, evaluation, and prediction.
+- `signal-data (1).csv` – Semiconductor manufacturing dataset used in the project.
+- `models/best_model.pkl` – Saved machine learning model.
+- `models/best_svm_model.pkl` – Saved Support Vector Machine model.
+- `models/scaler.pkl` – Saved feature scaler used during preprocessing.
+- `requirements.txt` – Contains the Python libraries required to run the project.
+```
+
+## Requirements
+
+The following Python libraries are required to run the project:
+
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+- joblib
+- jupyter
+
+## Project Report
+
+The complete project report is available in the repository as:
+
+`Corizo Major Project.pdf`
+
+## Author
+
+**Yeeshigaa H R**
+
+B.E. Computer Science and Engineering  
+Arunachala College of Engineering for Women
